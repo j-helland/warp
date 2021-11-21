@@ -1,0 +1,11 @@
+# message1: text_yaml1
+message1:
+  message1: !HYPERPARAMETER
+    values: [m1, m2, m3]
+
+  # other: !HYPERPARAMETER
+  #   values: [a, b]
+
+message2:
+  value1: value1
+  value2: 2

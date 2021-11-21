@@ -1,0 +1,43 @@
+# mac:
+*.DS_store
+
+# python:
+*.ipynb_checkpoints
+.ipynb_checkpoints*
+*.egg-info
+*__pycache__
+*.idea
+*.pyc
+venv/
+
+# project specific
+# data*
+*.warp
+.warp*
+
+# Latex:
+*.log
+*.aux
+*.toc
+*.markdown.in
+
+# npm
+*.lock
+*node_modules
+
+# Miscellaneous
+*.gz
+*.pdf
+*.csv
+*.job
+*.out
+*.pyprof
+*.html
+kedro*
+*.prof
+**/log.txt
+.vscode/
+
+# R
+.Rhistory
+.Rproj.user
