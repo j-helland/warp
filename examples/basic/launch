@@ -1,0 +1,2 @@
+#!/bin/bash
+python -i session.py  # https://stackoverflow.com/a/9409833/2232265
