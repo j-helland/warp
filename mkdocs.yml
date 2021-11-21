@@ -1,0 +1,54 @@
+site_name: WARP Documentation
+
+
+theme:
+  name: "material"
+
+
+# structure of pages
+nav:
+  - 'User Guide': 'user_guide.md'
+  - 'Developer Guide': 'dev_guide.md'
+  - 'Roadmap': 'roadmap.md'
+
+  - 'warp.workspace': 
+    - 'Workspace': 'workspace/workspace.md'
+    - 'Home': 'workspace/home.md'
+
+  - 'warp.graph':
+    - 'Graph': 'graph/graph.md'
+    # - 'Ancestry': 'graph/ancestry.md'
+
+  - 'warp.pipes':
+    - 'pipes': 'pipes/pipes.md'
+    - 'attributes': 'pipes/attributes.md'
+
+  - 'warp.data': 'data/data.md'
+  - 'warp.visualization': 'visualization/visualization.md'
+  - 'warp.utils': 'utils/utils.md'
+
+
+markdown_extensions:
+  - admonition            # special blocks
+  - pymdownx.details      # allow collapsible blocks
+  - pymdownx.superfences  # allow code blocks inside admonitions
+
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          setup_commands:
+            - import sys
+            - sys.path.append('./warp')
+          rendering:
+            show_source: false
+          selection:
+            filters:
+              - "!^_"         # exclude all members starting with '_'
+              - "^__init__$"  # but always include __init__
+              - "^__call__$"  # and also include __call__
+      watch:
+        - ../warp
+      # custom_templates: templates
