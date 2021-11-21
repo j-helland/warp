@@ -1,0 +1,1210 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>pipes - WARP Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pipes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="WARP Documentation" class="md-header__button md-logo" aria-label="WARP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WARP Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              pipes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="WARP Documentation" class="md-nav__button md-logo" aria-label="WARP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    WARP Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_guide/" class="md-nav__link">
+        User Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev_guide/" class="md-nav__link">
+        Developer Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          warp.workspace
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.workspace" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          warp.workspace
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workspace/workspace/" class="md-nav__link">
+        Workspace
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workspace/home/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          warp.graph
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.graph" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          warp.graph
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graph/graph/" class="md-nav__link">
+        Graph
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          warp.pipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.pipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          warp.pipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          pipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        pipes
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pipe" class="md-nav__link">
+    Pipe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe" class="md-nav__link">
+    warp.pipes.pipes.Pipe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.__call__" class="md-nav__link">
+    __call__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.clear_all" class="md-nav__link">
+    clear_all()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.clear_dependencies" class="md-nav__link">
+    clear_dependencies()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.clear_products" class="md-nav__link">
+    clear_products()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.load_products" class="md-nav__link">
+    load_products()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.run" class="md-nav__link">
+    run()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.save_products" class="md-nav__link">
+    save_products()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    Source
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Source" class="md-nav__link">
+    warp.pipes.pipes.Source
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Source.__call__" class="md-nav__link">
+    __call__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Source.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../attributes/" class="md-nav__link">
+        attributes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/data/" class="md-nav__link">
+        warp.data
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/visualization/" class="md-nav__link">
+        warp.visualization
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utils/utils/" class="md-nav__link">
+        warp.utils
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pipe" class="md-nav__link">
+    Pipe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe" class="md-nav__link">
+    warp.pipes.pipes.Pipe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.__call__" class="md-nav__link">
+    __call__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.clear_all" class="md-nav__link">
+    clear_all()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.clear_dependencies" class="md-nav__link">
+    clear_dependencies()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.clear_products" class="md-nav__link">
+    clear_products()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.load_products" class="md-nav__link">
+    load_products()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.run" class="md-nav__link">
+    run()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Pipe.save_products" class="md-nav__link">
+    save_products()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    Source
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Source" class="md-nav__link">
+    warp.pipes.pipes.Source
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Source.__call__" class="md-nav__link">
+    __call__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.pipes.Source.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="pipes">Pipes</h1>
+<p>The kinds of pipes that WARP will recognize.
+<a href="./#Pipe"><code>Pipe</code></a> is the main class to care about, while <a href="./#Source"><code>Source</code></a> is a helper for adding source products to the graph that can be referenced as class-level attributes similarly to those of a <a href="./#Pipe"><code>Pipe</code></a> subclass.</p>
+<hr />
+<h2 id="pipe"><code>Pipe</code></h2>
+
+
+  <div class="doc doc-object doc-class">
+
+<a id="warp.pipes.pipes.Pipe"></a>
+    <div class="doc doc-contents first">
+
+      <p><code>Pipe</code> must be subclassed by user-defined pipes in order to be recognized by WARP.
+Subclasses can have any name but are restricted to one declaration per file (with the exception of <a href="./#source"><code>Source</code></a>).</p>
+<details class="info">
+<summary>Info</summary>
+<p>The <a href="../../data/data/#dependencies"><code>@dependencies</code></a> and <a href="../../data/data/#produces"><code>@produces</code></a> decorators mutate 
+the <code>__attrs__</code> class-level attribute of <code>Pipe</code> which is then used by <a href="../../workspace/workspace/#workspace"><code>Workspace</code></a>, 
+which is essentially a roundabout way of making <code>__attrs__</code> a global variable.
+<code>__attrs__</code> itself is a <code>dict</code> mapping <code>Pipe</code> subclass names to <a href="../../pipes/attributes/#product"><code>Product</code></a> instances that
+were passed to the <a href="../../data/data/#dependencies"><code>@dependencies</code></a> and <a href="../../data/data/#produces"><code>@produces</code></a> decorators.</p>
+<p>More specifically, <a href="../../workspace/workspace/#workspace"><code>Workspace</code></a> accesses this quasi-global variable <code>__attrs__</code> 
+using class-level methods <code>__dependencies__</code> and <code>__products__</code> of <code>Pipe</code>. </p>
+</details>
+
+<p><strong>Examples:</strong></p>
+    <div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>The following is a minimal example of a <code>Pipe</code> declaration, which is placed in its own file.
+<div class="highlight"><pre><span></span><code><span class="c1"># A.py</span>
+<span class="kn">from</span> <span class="nn">warp</span> <span class="kn">import</span> <span class="n">Pipe</span>
+
+<span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="n">Pipe</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A.run()&#39;</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.pipes.Pipe.__call__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Calls the <a href="./#warp.pipes.pipes.Pipe.run"><code>run</code></a> function.</p>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.pipes.Pipe.clear_all" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">clear_all</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Call both <a href="./warp.pipes.pipes.Pipe.clear_products"><code>clear_products</code></a> and 
+<a href="./warp.pipes.pipes.Pipe.clear_dependencies"><code>clear_dependencies</code></a>.
+In addition, find all attributes of the pipe specified by the <code>name</code> argument that are 
+<a href="../attributes/#product"><code>Product</code></a> instances and set their <code>value</code> to <code>None</code>.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>name</code></td>
+        <td><code>str</code></td>
+        <td><p>The full name of the <code>Pipe</code> subclass to clear.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.pipes.Pipe.clear_dependencies" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">clear_dependencies</span><span class="p">(</span><span class="n">name</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Iterate over all <a href="../attributes/#product"><code>Product</code></a> instances passed to the <a href="../../data/data/#dependencies"><code>@dependencies</code></a>
+decorator and call <code>delattr</code> on them.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>name</code></td>
+        <td><code>str</code></td>
+        <td><p>The full name of the <code>Pipe</code> subclass to clear.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.pipes.Pipe.clear_products" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">clear_products</span><span class="p">(</span><span class="n">name</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Iterate over all <a href="../attributes/#product"><code>Product</code></a> instances passed to the <a href="../../data/data/#produces"><code>@produces</code></a>
+decorator and set their <code>value</code> attributes to <code>None</code>.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>name</code></td>
+        <td><code>str</code></td>
+        <td><p>The full name of the <code>Pipe</code> subclass to clear.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.pipes.Pipe.load_products" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">load_products</span><span class="p">()</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-classmethod"><code>classmethod</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>For the current <code>Pipe</code> subclass, create class-level attributes containing the value of the <a href="../pipes/attributes/#product"><code>Product</code></a> 
+instances passed to <a href="../../data/data/#dependencies"><code>@dependencies</code></a>.</p>
+<p>This is what allows the user to access the outputs of upstream pipes as if they were attributes of the current <code>Pipe</code> context.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function is called in <a href="../../workspace/workspace/#build"><code>Workspace.build</code></a> so that the requested 
+<a href="../../data/data/#dependencies"><code>@dependencies</code></a> are available at runtime.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default behavior of this function is to load cached <a href="../attributes/#product"><code>Product</code></a> values since they
+are cleared from memory unless otherwise specified.
+This happens by calling the <a href="../attributes/#warp.pipes.attributes.Product.load"><code>Product.load</code></a> method.
+This behavior occurs if the <code>Product.__save__</code> attribute is <code>True</code>.</p>
+<p>If <code>save=False</code> was passed to a <a href="../attributes/#product"><code>Product</code></a> constructor, then <code>Product.__save__ = False</code>
+and the value of the <a href="../attributes/#product"><code>Product</code></a> in memory is used.</p>
+</div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.pipes.Pipe.run" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p><code>@abstractmethod</code></p>
+<p>This function must be declared by <code>Pipe</code> subclasses.
+Called by the <a href="./#warp.pipes.pipes.Pipe.__call__"><code>__call__</code></a> function.</p>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.pipes.Pipe.save_products" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">save_products</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>For the current <code>Pipe</code> subclass, cache the values of each <a href="../attributes/#product"><code>Product</code></a> that was passed to
+the <a href="../../data/data/#produces"><code>@produces</code></a> decorator.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default behavior is to call the <a href="../attributes/#warp.pipes.attributes.Product.save"><code>Product.save</code></a> method and then set <code>product.value = None</code>.
+However, if <code>Product.__save__ = False</code>, then <code>save_products</code> does nothing.</p>
+</div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+<hr />
+<h2 id="source"><code>Source</code></h2>
+
+
+  <div class="doc doc-object doc-class">
+
+<a id="warp.pipes.pipes.Source"></a>
+    <div class="doc doc-contents first">
+
+      <p>An class for conveniently declaring source <a href="../attributes/#product"><code>Product</code></a> instances that can be referenced by
+other <a href="./#pipe"><code>Pipe</code></a> declarations.</p>
+<p>Instances of <code>Source</code> contain an attribute <code>Main</code> which is a <a href="./#pipe"><code>Pipe</code></a> subclass, allowing <code>Source</code> instances 
+to masquerade as python modules.</p>
+
+<p><strong>Examples:</strong></p>
+    <div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>This example shows how <code>Source</code> can be used to easily declare a source <a href="../attributes/#product"><code>Product</code></a>.
+Although you cannot declare multiple <a href="./#pipe"><code>Pipe</code></a> subclasses in the same file, you can declare <code>Source</code> 
+instances in the same file as your pipe declaration.
+<div class="highlight"><pre><span></span><code><span class="c1"># A.py</span>
+<span class="kn">from</span> <span class="nn">warp</span> <span class="kn">import</span> <span class="n">Source</span><span class="p">,</span> <span class="n">Pipe</span><span class="p">,</span> <span class="n">dependencies</span>
+
+<span class="n">source</span> <span class="o">=</span> <span class="n">Source</span><span class="p">()(</span><span class="n">p0</span><span class="o">=</span><span class="s1">&#39;path/to/product&#39;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="n">Pipe</span><span class="p">):</span>
+    <span class="nd">@dependencies</span><span class="p">(</span><span class="n">p0</span><span class="o">=</span><span class="n">source</span><span class="o">.</span><span class="n">Main</span><span class="o">.</span><span class="n">p0</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">p0</span><span class="p">)</span>
+</code></pre></div></p>
+</div>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.pipes.Source.__call__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">products</span><span class="p">,</span> <span class="o">**</span><span class="n">kwproducts</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Dynamically create a <a href="./#pipe"><code>Pipe</code></a> subclass declaration with name <code>Main</code> and add it as an attribute of this
+instance.
+Arguments will be wrapped </p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>products</code></td>
+        <td><code>str</code></td>
+        <td><p>Unnamed source products. 
+These will become attributes of <code>Source.Main</code> under the naming convention <code>product[INDEX]</code>, 
+where <code>[INDEX]</code> is a unique integer.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><code>s = Source()('path/to/file')</code> will create <code>s.Main.product0</code>.</p>
+</div></td>
+        <td><code>()</code></td>
+      </tr>
+      <tr>
+        <td><code>kwproducts</code></td>
+        <td><code>str</code></td>
+        <td><p>Named source products. 
+These will become attributes of <code>Source.Main</code> under the name specified by the keyword.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><code>s = Source()(user_product='path/to/file')</code> will create <code>s.Main.user_product</code>.</p>
+</div></td>
+        <td><code>{}</code></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.pipes.Source.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p><code>Source</code> pipes will appear in the graph with the naming convention <code>__source__{name}</code>.</p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../graph/graph/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Graph" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Graph
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../attributes/" class="md-footer__link md-footer__link--next" aria-label="Next: attributes" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              attributes
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>

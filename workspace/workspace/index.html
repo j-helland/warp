@@ -1,0 +1,1607 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Workspace - WARP Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#workspace" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="WARP Documentation" class="md-header__button md-logo" aria-label="WARP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WARP Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Workspace
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="WARP Documentation" class="md-nav__button md-logo" aria-label="WARP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    WARP Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_guide/" class="md-nav__link">
+        User Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev_guide/" class="md-nav__link">
+        Developer Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          warp.workspace
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.workspace" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          warp.workspace
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Workspace
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Workspace
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace" class="md-nav__link">
+    warp.workspace.workspace.Workspace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.configs" class="md-nav__link">
+    configs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.methods" class="md-nav__link">
+    methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.pipes" class="md-nav__link">
+    pipes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.session_timestamps" class="md-nav__link">
+    session_timestamps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.sessions" class="md-nav__link">
+    sessions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.backfill" class="md-nav__link">
+    backfill()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.build" class="md-nav__link">
+    build()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.clear_cache" class="md-nav__link">
+    clear_cache()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.create_session" class="md-nav__link">
+    create_session()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.gui" class="md-nav__link">
+    gui()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.load_session" class="md-nav__link">
+    load_session()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.parameters" class="md-nav__link">
+    parameters()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.products" class="md-nav__link">
+    products()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.resume" class="md-nav__link">
+    resume()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.show" class="md-nav__link">
+    show()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.status" class="md-nav__link">
+    status()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.view_pipe" class="md-nav__link">
+    view_pipe()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          warp.graph
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.graph" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          warp.graph
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graph/graph/" class="md-nav__link">
+        Graph
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          warp.pipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.pipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          warp.pipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipes/pipes/" class="md-nav__link">
+        pipes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipes/attributes/" class="md-nav__link">
+        attributes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/data/" class="md-nav__link">
+        warp.data
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/visualization/" class="md-nav__link">
+        warp.visualization
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utils/utils/" class="md-nav__link">
+        warp.utils
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace" class="md-nav__link">
+    warp.workspace.workspace.Workspace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.configs" class="md-nav__link">
+    configs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.methods" class="md-nav__link">
+    methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.pipes" class="md-nav__link">
+    pipes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.session_timestamps" class="md-nav__link">
+    session_timestamps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.sessions" class="md-nav__link">
+    sessions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.backfill" class="md-nav__link">
+    backfill()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.build" class="md-nav__link">
+    build()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.clear_cache" class="md-nav__link">
+    clear_cache()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.create_session" class="md-nav__link">
+    create_session()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.gui" class="md-nav__link">
+    gui()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.load_session" class="md-nav__link">
+    load_session()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.parameters" class="md-nav__link">
+    parameters()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.products" class="md-nav__link">
+    products()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.resume" class="md-nav__link">
+    resume()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.show" class="md-nav__link">
+    show()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.status" class="md-nav__link">
+    status()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.workspace.workspace.Workspace.view_pipe" class="md-nav__link">
+    view_pipe()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="workspace">Workspace</h1>
+
+
+  <div class="doc doc-object doc-class">
+
+<a id="warp.workspace.workspace.Workspace"></a>
+    <div class="doc doc-contents first">
+
+      <p>The <code>Workspace</code> object is the main interface through which the user can interact with their pipeline -- it serves as a manager for the other core classes that WARP provides, namely the <a href="../../graph/graph/#graph"><code>Graph</code></a>.
+It provides a set of tools for generating desired outputs, inspecting historical outputs, and for visualizing the pipeline itself.
+Notably, <code>Workspace</code> is the object that enables pipeline reproducibility by keeping track of data provenance, parameter values used at runtime by each pipe, as well as some other metadata.</p>
+<p>It is also worth noting that <code>Workspace</code> can be integrated easily into other scripts that extend functionality e.g. a script that launches multiple sessions to be run in parallel.</p>
+<p>Creating a <code>Workspace</code> instance will typically be the last step in initializing your WARP pipeline.
+It requires an instantiated <a href="../../graph/graph/#graph"><code>Graph</code></a> object passed to <code>__init__</code>.
+Once the <code>Workspace</code> instance has been created, the next most common step will be to call <a href="./#build"><code>build</code></a> or <a href="./#backfill"><code>backfill</code></a> to generate pipeline output.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.configs" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">configs</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Search for declared config files and load them.
+Results are cached via <code>@functools.lru_cache(maxsize=1)</code>.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.methods" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">methods</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>List the available methods for the user.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.pipes" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">pipes</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>List the pipes present in the pipeline graph.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.session_timestamps" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">session_timestamps</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>List the timestamp of each existing session.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.sessions" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">sessions</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>List the available sessions.</p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">graph</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">session_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">link_static_products</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>graph</code></td>
+        <td><code>Optional[str]</code></td>
+        <td><p>Constructed pipeline graph.</p></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>session_id</code></td>
+        <td><code>Optional[str]</code></td>
+        <td><p>The unique id for the session to launch. 
+If the id does not already exist, this creates a new session with that id.</p></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>link_static_products</code></td>
+        <td><code>bool</code></td>
+        <td><p>Link static products produced by other sessions to this session and resolve backfill operations accordingly.</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.backfill" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">backfill</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warp_pipe_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">configs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">build_target_pipe</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">rebuild_all</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">rebuild_static_products</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Call <a href="./#build"><code>build</code></a> on all out-of-sync upstream pipes to <code>warp_pipe_name</code>, including <code>warp_pipe_name</code> itself as the terminal build.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If there are no out-of-sync upstream pipes, <code>backfill</code> reduces to simply calling <code>build</code> on <code>warp_pipe_name</code>.</p>
+</div>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>warp_pipe_name</code></td>
+        <td><code>str</code></td>
+        <td><p>A partially matching string of a pipe name contained in the graph.
+This string will be fuzzily matched.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>configs</code></td>
+        <td><code>Optional[Dict[str, Union[str, List[str], Dict[str, Any]]]]</code></td>
+        <td><p>A dict mapping a (fuzzy) pipe name to parameter values that should be used.
+The parameter values can be passed by config file paths or directly using a proper dict structure.</p>
+<ul>
+<li>If the dict value is <code>List[str]</code>, then it is assumed that the list entries are paths to config files.</li>
+<li>If the dict value is <code>Dict[str, Any]</code>, then the parameter whose name matches the dict key will be updated according to the value.
+    If the value is another dict, then this will be merged with the existing dict, giving precedence to the passed values.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All pipes specified by the key values will be rebuilt regardless of their timestamps.</p>
+</div></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>rebuild_all</code></td>
+        <td><code>bool</code></td>
+        <td><p>A flag that forces warp to rebuild all pipes in the lineage of <code>warp_pipe_name</code>.</p></td>
+        <td><code>False</code></td>
+      </tr>
+      <tr>
+        <td><code>rebuild_static_products</code></td>
+        <td><code>bool</code></td>
+        <td><p>Flag forcing warp to re-generate static products. 
+Only useful if <code>Workspace</code> was initialized using the <code>link_static_products=True</code> flag.</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Examples:</strong></p>
+    <p>The following example will force a rebuild of the <code>exmaple.A</code> and <code>example.C</code> pipes.
+In the <code>A</code> case, existing parameter values will be overridden by the values found in <code>config/A</code>.yml<code>.
+In the</code>C<code>case, only the</code>message` parameter is overridden with the specified value.
+<div class="highlight"><pre><span></span><code><span class="n">ws</span><span class="o">.</span><span class="n">backfill</span><span class="p">(</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> 
+     <span class="n">configs</span><span class="o">=</span><span class="p">{</span>
+         <span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="s1">&#39;config/A1.yml&#39;</span><span class="p">,</span> 
+         <span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="nb">dict</span><span class="p">(</span>
+             <span class="n">message</span><span class="o">=</span><span class="s1">&#39;OVERRIDE_C&#39;</span><span class="p">),</span>
+     <span class="p">},</span>
+<span class="p">)</span>
+</code></pre></div></p>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.build" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warp_pipe_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">warp_backfill_call</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Build a pipe according to its user-defined pipe class. 
+If any upstream pipes are out-of-sync, an exception will be raised prompting you to use <a href="./#backfill"><code>backfill</code></a> instead.
+Update pipe parameters from loaded config files.
+If a keyword argument is specified, this always takes precedence over config file values.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>warp_pipe_name</code></td>
+        <td><code>str</code></td>
+        <td><p>A partially matching string of a pipe name contained in the graph.
+This string will be fuzzily matched.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>config</code></td>
+        <td><code>Union[str, List[str], Dict[str, Any]]</code></td>
+        <td></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>warp_backfill_call</code></td>
+        <td><code>bool</code></td>
+        <td><p>Internal flag indicating whether or not build is being called through self.backfill</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.clear_cache" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">clear_cache</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">clear_all</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Delete cached metadata about pipes for currently loaded session -- parameter values, commit hash, timestamps etc.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>session_id</code></td>
+        <td><code>Optional[str]</code></td>
+        <td><p>The name of the session to clear.</p></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>clear_all</code></td>
+        <td><code>bool</code></td>
+        <td><p>If True, deletes full warp cache, including all session directories therein. 
+If False, deletes cache for currently loaded session only.</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>      <p>TODO: allow the clearing of specific pipes within a session.</p>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.create_session" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">create_session</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session_id</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Create a new session with the id <code>session_id</code> and load into it.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>session_id</code></td>
+        <td><code>str</code></td>
+        <td><p>The name of the new session to create. 
+Must not collide with an existing session.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.gui" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">gui</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Launch the GUI mode of WARP.
+See <a href="../../visualization/visualization/#warp.visualization.gui"><code>warp.visualization.gui</code></a>.</p>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.load_session" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">load_session</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session_id</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Load an existing session. </p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>session_id</code></td>
+        <td><code>str</code></td>
+        <td><p>The name of the session to load. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is no fuzzy matching -- <code>session_id</code> must match an existing session_id exactly.</p>
+</div></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.parameters" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipe_name</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>List the parameter values that are currently loaded for a pipe.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>pipe_name</code></td>
+        <td><code>str</code></td>
+        <td><p>Name of the pipe.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>pipe_name</code> is fuzzily matched against existing pipes in the graph.</p>
+</div></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.products" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">products</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipe_name</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>List the products that a pipe will produce.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>pipe_name</code></td>
+        <td><code>str</code></td>
+        <td><p>Name of the pipe. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>pipe_name</code> is fuzzily matched against existing pipes in the graph.</p>
+</div></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.resume" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">resume</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Load the most recent session.</p>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.show" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">show</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Visualize the pipe graph using graphviz.
+Optionally save the visualization to a file path.
+See [<code>warp.visualization</code>][warp.visualization].</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>path</code></td>
+        <td><code>Optional[str]</code></td>
+        <td><p>Path to save visualization of the pipeline.</p></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>verbose</code></td>
+        <td><code>bool</code></td>
+        <td><p>If True, display the full node/edge labels.</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.status" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipe_name</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Report whether a data pipe exists and when it was built.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>pipe_name</code></td>
+        <td><code>str</code></td>
+        <td><p>Name of the target pipe (will be fuzzily matched).</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.workspace.workspace.Workspace.view_pipe" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">view_pipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipe_name</span><span class="p">,</span> <span class="n">return_str</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">full_file</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Display the source code for a pipe.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>pipe_name</code></td>
+        <td><code>str</code></td>
+        <td><p>Name of the pipe in the graph.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Will be fuzzily matched.</p>
+</div></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>return_str</code></td>
+        <td><code>bool</code></td>
+        <td><p>Flag to return the source code of the pipe as a string.</p></td>
+        <td><code>False</code></td>
+      </tr>
+      <tr>
+        <td><code>full_file</code></td>
+        <td><code>bool</code></td>
+        <td><p>Flag to show the full contents of the source file rather than just the pipe class declaration therein.</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../roadmap/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Roadmap" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Roadmap
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../home/" class="md-footer__link md-footer__link--next" aria-label="Next: Home" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Home
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>

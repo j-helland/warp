@@ -1,0 +1,1047 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Graph - WARP Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#graph" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="WARP Documentation" class="md-header__button md-logo" aria-label="WARP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WARP Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Graph
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="WARP Documentation" class="md-nav__button md-logo" aria-label="WARP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    WARP Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_guide/" class="md-nav__link">
+        User Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev_guide/" class="md-nav__link">
+        Developer Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          warp.workspace
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.workspace" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          warp.workspace
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workspace/workspace/" class="md-nav__link">
+        Workspace
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workspace/home/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          warp.graph
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.graph" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          warp.graph
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Graph
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Graph
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph" class="md-nav__link">
+    warp.graph.graph.Graph
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.add" class="md-nav__link">
+    add()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.get_parents_from_products" class="md-nav__link">
+    get_parents_from_products()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.get_pipe_instance" class="md-nav__link">
+    get_pipe_instance()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.get_pipe_module" class="md-nav__link">
+    get_pipe_module()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.get_pipe_name_from_abbreviation" class="md-nav__link">
+    get_pipe_name_from_abbreviation()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.is_source_pipe" class="md-nav__link">
+    is_source_pipe()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.paths" class="md-nav__link">
+    paths()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          warp.pipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.pipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          warp.pipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipes/pipes/" class="md-nav__link">
+        pipes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipes/attributes/" class="md-nav__link">
+        attributes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/data/" class="md-nav__link">
+        warp.data
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/visualization/" class="md-nav__link">
+        warp.visualization
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utils/utils/" class="md-nav__link">
+        warp.utils
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph" class="md-nav__link">
+    warp.graph.graph.Graph
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.add" class="md-nav__link">
+    add()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.get_parents_from_products" class="md-nav__link">
+    get_parents_from_products()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.get_pipe_instance" class="md-nav__link">
+    get_pipe_instance()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.get_pipe_module" class="md-nav__link">
+    get_pipe_module()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.get_pipe_name_from_abbreviation" class="md-nav__link">
+    get_pipe_name_from_abbreviation()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.is_source_pipe" class="md-nav__link">
+    is_source_pipe()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.graph.graph.Graph.paths" class="md-nav__link">
+    paths()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="graph">Graph</h1>
+
+
+  <div class="doc doc-object doc-class">
+
+<a id="warp.graph.graph.Graph"></a>
+    <div class="doc doc-contents first">
+
+      <p>A thin wrapper around a multi-digraph which provides some syntax for adding <a href="../../pipes/pipes/#pipe"><code>Pipe</code></a> subclasses.</p>
+<ul>
+<li>Nodes refer to <a href="../../pipes/pipes/#pipe"><code>Pipe</code></a> subclasses.</li>
+<li>Edges represent <a href="../../pipes/attributes/#product"><code>Product</code></a> instances.</li>
+</ul>
+<p>An instantiated <code>Graph</code> is required in order to create a <a href="../../workspace/workspace/#Workspace"><code>Workspace</code></a>.</p>
+<p>Special syntax is provided to reduce the verbosity of adding <a href="../../pipes/pipes/#pipe"><code>Pipe</code></a> subclasses to the graph.
+Note that both of the following operators can be composed.</p>
+<ul>
+<li>
+<p>The <code>&gt;&gt;</code> operator is a basic <a href="./#warp.graph.graph.Graph.add"><code>add</code></a> operation. 
+    This operator that you should use for adding whenever possible.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An error will raise if the <a href="../../pipes/pipes/#pipe"><code>Pipe</code></a> subclass(es) producing the <a href="../../data/data/#dependencies"><code>@dependencies</code></a> of the <a href="../../pipes/pipes/#pipe"><code>Pipe</code></a> subclass to be added do not already exist in the graph as nodes.</p>
+</div>
+</li>
+<li>
+<p>The <code>@</code> operator is an <a href="./#warp.graph.graph.Graph.add"><code>add</code></a> operation with the additional semantics that any <a href="../../data/data/#dependencies"><code>@dependencies</code></a> that are not already <a href="../../data/data/#produces"><code>@produces</code></a> outputs of an existing node in the graph will be added as <a href="../../pipes/pipes/#Source"><code>Source</code></a> products.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a href="../../pipes/pipes/#Source"><code>Source</code></a> pipes will appear in the <code>Graph</code> under the naming convention 
+<code>__source__{pipe name}{i}</code>, where <code>{pipe name}</code> is the automatically derived name of the 
+<a href="../../pipes/pipes/#pipe"><code>Pipe</code></a> subclass being added and <code>{i}</code> is a unique index for resolving 
+cases in which multiple sources are specified.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This operator should be used with caution as it can silently create unexpected <code>Graph</code> topologies.</p>
+</div>
+</li>
+</ul>
+
+<p><strong>Examples:</strong></p>
+    <div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>In the following example, we take <a href="../../pipes/pipes/#pipe"><code>Pipe</code></a> subclasses <code>A</code>, <code>B</code>, <code>C</code>, and <code>D</code> and add them to a <code>Graph</code> object.
+<div class="highlight"><pre><span></span><code><span class="n">g</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">()</span>
+<span class="n">g</span> <span class="o">@</span> <span class="n">A</span> <span class="o">+</span> <span class="n">B</span> <span class="o">+</span> <span class="n">C</span> <span class="o">+</span> <span class="n">D</span>
+</code></pre></div>
+The last line is equivalent to
+<div class="highlight"><pre><span></span><code><span class="n">g</span> <span class="o">@</span> <span class="n">A</span>
+<span class="n">g</span> <span class="o">+</span> <span class="n">B</span>
+<span class="n">g</span> <span class="o">+</span> <span class="n">C</span>
+<span class="n">g</span> <span class="o">+</span> <span class="n">D</span>
+</code></pre></div>
+which is in turn equivalent to
+<div class="highlight"><pre><span></span><code><span class="n">g</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">make_dependencies_sources</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
+</code></pre></div></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since the topology of the <code>Graph</code> is defined implicitly by the <a href="../../data/data/#dependencies"><code>@dependencies</code></a> 
+and <a href="../../data/data/#produces"><code>@produces</code></a> decorators within a <a href="../../pipes/pipes/#pipe"><code>Pipe</code></a> 
+subclass declaration, the syntax <code>A &gt;&gt; B &gt;&gt; C &gt;&gt; D</code> does not mean that the graph will be a linked list from <code>A</code> to <code>B</code>.
+In this sense, the topology of the <code>Graph</code> is not reflected by the <code>&gt;&gt;</code> operator. </p>
+</div>
+</div>
+      <hr />
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.graph.graph.Graph.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.graph.graph.Graph.add" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipe</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">make_dependencies_sources</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">override_existing_attrs</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">docstring</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Create a node in the graph for a <a href="../../pipes/pipes/#pipe"><code>Pipe</code></a> subclass. 
+Moreover, create edges between existing nodes whose <a href="../../pipes/attributes/#product"><code>Product</code></a> instances 
+are <a href="../../data/data/#dependencies"><code>@dependencies</code></a> of the new node.</p>
+<p>By default, an error will be raised if <a href="../../data/data/#dependencies"><code>@dependencies</code></a> exist that cannot be found in the graph.
+Using the <code>make_dependencies_sources=True</code> flag will cause such <a href="../../data/data/#dependencies"><code>@dependencies</code></a> 
+to be added as the outputs of a <a href="../../pipes/pipes/#Source"><code>Source</code></a> node.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>pipe</code></td>
+        <td><code>module</code></td>
+        <td><p>Must be a subclass of the <a href="../../pipes/pipes/#pipe"><code>Pipe</code></a> class.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>make_dependencies_sources</code></td>
+        <td><code>bool</code></td>
+        <td><p>Instead of raising an error when the <a href="../../data/data/#dependencies"><code>@dependencies</code></a> 
+of <code>pipe</code> are not found, create a <a href="../../pipes/pipes/#Source"><code>Source</code></a> node whose outputs are the missing 
+<a href="../../data/data/#dependencies"><code>@dependencies</code></a>.</p></td>
+        <td><code>False</code></td>
+      </tr>
+      <tr>
+        <td><code>override_existing_attrs</code></td>
+        <td><code>bool</code></td>
+        <td><p>Flag to allow overriding of existing class-level attributes of <code>pipe</code>.
+This flag is used internally to allow reloading of the graph, since declaring 
+<a href="../../data/data/#dependencies"><code>@dependencies</code></a> will create corresponding class-level attributes, the overriding of which is disallowed by default.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This flag is for internal use only -- the user should never need this.</p>
+</div></td>
+        <td><code>False</code></td>
+      </tr>
+      <tr>
+        <td><code>docstring</code></td>
+        <td><code>Optional[str]</code></td>
+        <td><p>An optional descriptor of the <code>pipe</code>'s functionality.</p></td>
+        <td><code>None</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>object</code></td>
+      <td><p>self</p></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.graph.graph.Graph.get_parents_from_products" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_parents_from_products</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">products</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>return a list of pipes that have products matching <code>products</code> argument</p>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.graph.graph.Graph.get_pipe_instance" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_pipe_instance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipe_name</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.graph.graph.Graph.get_pipe_module" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_pipe_module</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pipe</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Search module for class declarations subclassing <code>Pipe</code>.
+There should only be one of these per file.</p>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.graph.graph.Graph.get_pipe_name_from_abbreviation" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_pipe_name_from_abbreviation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Fuzzy matching of a string to the existing pipe names in the graph.</p>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.graph.graph.Graph.is_source_pipe" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_source_pipe</span><span class="p">(</span><span class="n">pipe_name</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-staticmethod"><code>staticmethod</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.graph.graph.Graph.paths" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">paths</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">dest</span><span class="p">)</span></code>
+
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Identify all paths from source to destination</p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../workspace/home/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../pipes/pipes/" class="md-footer__link md-footer__link--next" aria-label="Next: pipes" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              pipes
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1213 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>attributes - WARP Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#attributes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="WARP Documentation" class="md-header__button md-logo" aria-label="WARP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WARP Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              attributes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="WARP Documentation" class="md-nav__button md-logo" aria-label="WARP Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    WARP Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_guide/" class="md-nav__link">
+        User Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev_guide/" class="md-nav__link">
+        Developer Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          warp.workspace
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.workspace" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          warp.workspace
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workspace/workspace/" class="md-nav__link">
+        Workspace
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workspace/home/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          warp.graph
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.graph" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          warp.graph
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../graph/graph/" class="md-nav__link">
+        Graph
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          warp.pipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="warp.pipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          warp.pipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pipes/" class="md-nav__link">
+        pipes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          attributes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        attributes
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameter" class="md-nav__link">
+    Parameter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.Parameter" class="md-nav__link">
+    warp.pipes.attributes.Parameter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.Parameter.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#product" class="md-nav__link">
+    Product
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.Product" class="md-nav__link">
+    warp.pipes.attributes.Product
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.Product.path" class="md-nav__link">
+    path
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.Product.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameterfile" class="md-nav__link">
+    ParameterFile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.ParameterFile" class="md-nav__link">
+    warp.pipes.attributes.ParameterFile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.ParameterFile.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstractpipeobject" class="md-nav__link">
+    AbstractPipeObject
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.abstract.AbstractPipeObject" class="md-nav__link">
+    warp.pipes.abstract.AbstractPipeObject
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/data/" class="md-nav__link">
+        warp.data
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/visualization/" class="md-nav__link">
+        warp.visualization
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utils/utils/" class="md-nav__link">
+        warp.utils
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameter" class="md-nav__link">
+    Parameter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.Parameter" class="md-nav__link">
+    warp.pipes.attributes.Parameter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.Parameter.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#product" class="md-nav__link">
+    Product
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.Product" class="md-nav__link">
+    warp.pipes.attributes.Product
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.Product.path" class="md-nav__link">
+    path
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.Product.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameterfile" class="md-nav__link">
+    ParameterFile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.ParameterFile" class="md-nav__link">
+    warp.pipes.attributes.ParameterFile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.attributes.ParameterFile.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abstractpipeobject" class="md-nav__link">
+    AbstractPipeObject
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warp.pipes.abstract.AbstractPipeObject" class="md-nav__link">
+    warp.pipes.abstract.AbstractPipeObject
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="attributes">Attributes</h1>
+<hr />
+<h2 id="parameter">Parameter</h2>
+
+
+  <div class="doc doc-object doc-class">
+
+<a id="warp.pipes.attributes.Parameter"></a>
+    <div class="doc doc-contents first">
+
+      <p>A wrapper for pipeline parameters that can be loaded from and saved to YAML files.
+This class is meant to be used to create class-level attributes of your <a href="../pipes/#pipe"><code>Pipe</code></a> subclass (see example below).
+When used in this way, <code>Parameter</code> objects can be treated syntactically like the value that they contain.</p>
+
+<p><strong>Examples:</strong></p>
+    <div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="n">Pipe</span><span class="p">):</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">Parameter</span><span class="p">(</span><span class="s1">&#39;pname&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># `p` can be used like a regular class attribute. </span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">p</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">p</span><span class="p">)</span>
+</code></pre></div>
+</div>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.attributes.Parameter.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>name</code></td>
+        <td><code>str</code></td>
+        <td><p>Identifier for the parameter. 
+If loading the value from a YAML config file, this needs to match the corresponding field name. </p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>default</code></td>
+        <td></td>
+        <td><p>(<code>Optional[Any]</code>) The default value that will be used for the parameter if no config file is specified.
+If not specified, the value of the parameter will be <code>name</code> unless overridden by a config file.</p>
+<p>The type of this value must be serializable to a YAML file -- it cannot be a function or a class.
+An error will be raised if the type is not allowed.</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+<hr />
+<h2 id="product">Product</h2>
+
+
+  <div class="doc doc-object doc-class">
+
+<a id="warp.pipes.attributes.Product"></a>
+    <div class="doc doc-contents first">
+
+      <p>A wrapper for the inputs/outputs of <a href="../pipes/#pipe"><code>Pipe</code></a> subclasses.
+The saving/loading behavior is altered by passing various flags to <a href="./#warp.pipes.attributes.Product.__init__"><code>__init__</code></a>.</p>
+<p>By default, products passed into <a href="../../data/data/#produces"><code>@produces</code></a> will be <a href="../../utils/utils/#warp.utils.utils.pickle">pickled</a> to the WARP cache location 
+associated with the active session at runtime. 
+Similarly, products passed into <a href="../../data/data/#dependencies"><code>@dependencies</code></a> will be <a href="../../utils/utils/#warp.utils.utils.unpickle">unpickled</a></p>
+<p>Custom saving/loading functions can be attached to a <code>Product</code> if pickling is not desired.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The topology of the <a href="../../graph/graph/#graph"><code>Graph</code></a> is implicitly defined by passing <code>Product</code> instances to the
+<a href="../../data/data/#dependencies"><code>@dependencies</code></a> and <a href="../../data/data/#produces"><code>@produces</code></a> decorators in the
+<a href="../pipes/#pipe"><code>Pipe</code></a> declaration.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code>Product</code> provides the custom syntax <code>&lt;&lt;&lt;</code>, which is shorthand for assigning a value to the <code>Product.value</code> attribute.</p>
+<details class="example">
+<summary>Example</summary>
+<div class="highlight"><pre><span></span><code><span class="n">p</span> <span class="o">=</span> <span class="n">Product</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">&lt;&lt;</span> <span class="mi">0</span>
+<span class="n">p</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># equivalent</span>
+</code></pre></div>
+</details>
+</div>
+<details class="info">
+<summary>Info</summary>
+<p><code>Product</code> contains the following class-level attributes that change the behavior of 
+<a href="../../workspace/workspace/#warp.workspace.Workspace.build"><code>Workspace.build</code></a>.</p>
+<ul>
+<li><code>__source__</code>: The name of the pipe that produced this product.</li>
+<li><code>__static__</code>: Specifies whether or not to cache the product statically.</li>
+<li><code>__external__</code>: Specifies whether or not to cache the product externally.</li>
+<li><code>__save__</code>: Specifies whether to cache the product or to leave it in working memory.</li>
+</ul>
+</details>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="warp.pipes.attributes.Product.path" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">path</span><span class="p">:</span> <span class="nb">str</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-property"><code>property</code></small>
+      <small class="doc doc-property doc-property-readonly"><code>readonly</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+      <p>The correctly resolved path to the <code>Product</code> based on the state of the <code>__external__</code> and <code>__static__</code> attributes.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The correct WARP cache location for the current session must still be resolved, which can be done via 
+<code>path.format(warp.globals.product_dir())</code>.</p>
+</div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.attributes.Product.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">static</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">external</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">save</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">load</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>path</code></td>
+        <td><code>str</code></td>
+        <td><p>The relative path to save the product value to after the <code>run()</code> function of a <a href="../pipes/#pipe"><code>Pipe</code></a> subclass finishes.</p>
+<p>By default, this path will be appended to the path corresponding to the current WARP session directory in the WARP cache.
+Both <code>static</code> and <code>external</code> modify this behavior.</p>
+<ul>
+<li>If <code>static=True</code>, <code>path</code> will instead be appended to the <code>static_products/</code> subdirectory of the WARP cache.</li>
+<li>If <code>external=True</code>, then the path will remain unaltered regardless of the <code>static</code> flag.</li>
+</ul></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>static</code></td>
+        <td><code>bool</code></td>
+        <td><p>Flag to mark this product as static, meaning that this product will be visible to other sessions.
+Unless <code>external=True</code> is specified, this will cause <code>path</code> to be appended to the <code>static_products/</code> subdirectory of the WARP cache.</p></td>
+        <td><code>False</code></td>
+      </tr>
+      <tr>
+        <td><code>external</code></td>
+        <td><code>bool</code></td>
+        <td><p>Flag to mark this product as external, meaning that its <code>path</code> will left unmodified.</p>
+<details class="info">
+<summary>Info</summary>
+<p>This flag is used by the implementation of <a href="../pipes/#Source"><code>Source</code></a> to allow the ingestion of external data artifacts into the pipeline.</p>
+</details></td>
+        <td><code>False</code></td>
+      </tr>
+      <tr>
+        <td><code>save</code></td>
+        <td><code>Union[bool, function]</code></td>
+        <td><ul>
+<li>
+<p><code>None</code>: Cache the <code>Product</code> value by calling <a href="../../utils/utils/#warp.utils.utils.pickle"><code>pickle</code></a>.</p>
+</li>
+<li>
+<p><code>FunctionType</code>: A user-defined callable implementing custom saving behavior.
+    The function must have the signature <code>(path: str, value: Any) -&gt; None</code>.
+    The <code>path</code> argument to this function will always be the fully resolved file location.</p>
+<p>Passing a custom callable to <code>save</code> requires also passing a custom callable to 
+<a href="./#warp.pipes.attributes.Product.load"><code>load</code></a>.</p>
+<details class="example">
+<summary>Example</summary>
+<p>The default <code>save</code> function is implemented in WARP as
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">warp</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">pickle</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</code></pre></div></p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This callable must create a file specified by <code>path</code>, otherwise WARP will detect this pipe as 
+unbuilt and trigger rebuilds.</p>
+</div>
+</li>
+<li>
+<p><code>False</code>: Do not cache the product -- rather, leave it in working memory.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>During <a href="../../workspace/workspace/#warp.workspace.Workspace.backfill"><code>backfill</code></a> calls, products 
+that are not cached in this manner will trigger rebuilds of the upstream pipes that produced them 
+if said upstream pipes are direct ancestors of the target pipe.</p>
+</div>
+</li>
+</ul></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>load</code></td>
+        <td><code>Optional[function]</code></td>
+        <td><ul>
+<li>
+<p><code>None</code>: Call <a href="../../utils/utils/#warp.utils.utils.unpickle"><code>unpickle</code></a> on the specified <code>path</code>.</p>
+</li>
+<li>
+<p><code>FunctionType</code>: A user-defined callable implementing custom loading behavior.
+    The callable must have the signature <code>(path: str) -&gt; Any</code>.
+    The <code>path</code> argument to this function will always be the fully resolved file location.</p>
+<p>Passing a custom callable to <code>load</code> requires also passing a custom callable to
+<a href="./#warp.pipes.attributes.Product.save"><code>save</code></a>.</p>
+<details class="example">
+<summary>Example</summary>
+<p>The default <code>load</code> function is implemented in WARP as
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">warp</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">unpickle</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+</code></pre></div></p>
+</details>
+</li>
+</ul></td>
+        <td><code>None</code></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+<hr />
+<h2 id="parameterfile">ParameterFile</h2>
+
+
+  <div class="doc doc-object doc-class">
+
+<a id="warp.pipes.attributes.ParameterFile"></a>
+    <div class="doc doc-contents first">
+
+      <p>A wrapper for declaring a config file to load <a href="./#parameter"><code>Parameter</code></a> values from.
+This config file should contain at least one field that corresponds to a parameter of the pipe in which this config is used.</p>
+<p>This should be used as a class-level attribute of your <a href="../pipes/#pipe"><code>Pipe</code></a> subclass.</p>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="n">Pipe</span><span class="p">):</span>
+    <span class="c1"># Must have a field `p_field` e.g. `p_field: 0`</span>
+    <span class="n">config</span> <span class="o">=</span> <span class="n">ParameterFile</span><span class="p">(</span><span class="s1">&#39;../configs/A.yml&#39;</span><span class="p">)</span>
+
+    <span class="n">p</span> <span class="o">=</span> <span class="n">Parameter</span><span class="p">(</span><span class="s1">&#39;p_field&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># The value from the config file. </span>
+        <span class="c1"># In this case, the output will be `p value 0`.</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;p value: &#39;</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+</code></pre></div>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h2 id="warp.pipes.attributes.ParameterFile.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">multi_use</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+</h2>
+
+    <div class="doc doc-contents ">
+
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>path</code></td>
+        <td><code>str</code></td>
+        <td><p>File path to a valid YAML file with fields matching <a href="./#parameter"><code>Parameter</code></a> names.</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>multi_use</code></td>
+        <td><code>bool</code></td>
+        <td><p>Flag to allow a config file to be used by more than just this pipe.
+In such cases, each pipe declaring this config file must use this flag.</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+<hr />
+<h2 id="abstractpipeobject"><code>AbstractPipeObject</code></h2>
+
+
+  <div class="doc doc-object doc-class">
+
+<a id="warp.pipes.abstract.AbstractPipeObject"></a>
+    <div class="doc doc-contents first">
+
+      <p>TODO</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../pipes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: pipes" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              pipes
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../data/data/" class="md-footer__link md-footer__link--next" aria-label="Next: warp.data" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              warp.data
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>
